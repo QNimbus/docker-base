@@ -16,8 +16,6 @@ RUN locale-gen $LANG
 
 RUN apt-get -q update \
 	&& \
-#    apt-get install -qy --force-yes \
-#	&& \
     apt-get -y autoremove
 
 # Clean up APT when done.
